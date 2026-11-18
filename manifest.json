@@ -1,0 +1,11 @@
+{
+  "name": "Pocket Ledger",
+  "short_name": "Ledger",
+  "description": "A private, offline-first personal finance tracker.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#090d12",
+  "theme_color": "#090d12",
+  "icons": [{"src":"assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
