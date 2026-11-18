@@ -1,0 +1,241 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: smoke.spec.js >> onboarding, demo, Quick Add, reminder link, backups, and offline shell
+- Location: tests\e2e\smoke.spec.js:4:1
+
+# Error details
+
+```
+Test timeout of 60000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - generic [ref=e6]:
+            - paragraph [ref=e7]: YOUR MONEY, YOUR WAY
+            - heading "Dashboard" [level=1] [ref=e8]
+          - button "Toggle color theme" [ref=e9] [cursor=pointer]: ◐
+        - generic [ref=e10]:
+          - button "Previous month" [ref=e11] [cursor=pointer]: ‹
+          - button "November 2026" [ref=e12] [cursor=pointer]
+          - button "Next month" [ref=e13] [cursor=pointer]: ›
+          - textbox "Pick month": 2026-11
+      - status [ref=e14]:
+        - generic [ref=e15]: DEMO DATA · sample entries affect totals until removed
+        - button "Remove demo data" [ref=e16] [cursor=pointer]
+      - generic [ref=e17]:
+        - region "All-time account balances" [ref=e18]:
+          - article [ref=e19]:
+            - generic [ref=e20]: Total Balance
+            - strong [ref=e21]: ₹28,420
+            - generic [ref=e22]: All time · includes Udhar
+          - button "Cash ₹28,420" [ref=e24] [cursor=pointer]:
+            - generic [ref=e28]: Cash
+            - strong [ref=e29]: ₹28,420
+            - generic [aria-hidden] [ref=e30]: ›
+          - button "Manage accounts" [ref=e31] [cursor=pointer]
+          - button "Add bank account" [ref=e32] [cursor=pointer]
+          - button "Cash ↔ Bank · Transfer" [ref=e33] [cursor=pointer]:
+            - generic [aria-hidden] [ref=e34]: ⇄
+        - generic [ref=e36]:
+          - generic [ref=e38]:
+            - paragraph [ref=e39]: MONTHLY OVERVIEW
+            - heading "Monthly summary" [level=2] [ref=e40]
+          - generic [ref=e41]:
+            - article "₹30,000" [ref=e42]:
+              - generic [ref=e43]: Income
+              - strong [ref=e44]: ₹30,000
+            - article "₹80" [ref=e46]:
+              - generic [ref=e47]: Expense
+              - strong [ref=e48]: ₹80
+            - article "₹0" [ref=e50]:
+              - generic [ref=e51]: Invested this month
+              - strong [ref=e52]: ₹0
+            - article "₹29,920" [ref=e54]:
+              - generic [ref=e55]: Savings
+              - strong [ref=e56]: ₹29,920
+          - paragraph [ref=e58]: Savings is Income minus Expense. Investments are tracked separately.
+          - paragraph [ref=e59]: Income and Expense exclude Udhar and Transfers. Investments are separate from Savings.
+          - paragraph [ref=e60]: "Left in hand after investing: ₹29,920"
+        - generic [ref=e61]:
+          - generic [ref=e63]:
+            - paragraph [ref=e64]: SMART (ON YOUR DEVICE)
+            - heading "Smart Insights" [level=2] [ref=e65]
+          - article [ref=e67]:
+            - heading "Create a data backup" [level=3] [ref=e68]
+            - paragraph [ref=e69]: No backup date is recorded on this device.
+            - generic [ref=e70]:
+              - button "Show details" [ref=e71] [cursor=pointer]
+              - group [ref=e72]:
+                - generic "Why am I seeing this?" [ref=e73] [cursor=pointer]
+              - button "Settings" [ref=e74] [cursor=pointer]
+              - button "Dismiss" [ref=e75] [cursor=pointer]
+        - generic [ref=e76]:
+          - generic [ref=e78]:
+            - paragraph [ref=e79]: MONTH-END OUTLOOK
+            - heading "Safe to spend today" [level=2] [ref=e80]
+            - button "i" [ref=e81] [cursor=pointer]
+          - strong [ref=e82]: ₹2,186.15
+          - paragraph [ref=e83]: Current balance ₹28,420 − commitments ₹0 − reserved budget ₹0, divided by 13 days left.
+          - paragraph [ref=e84]: "At this pace, month-end balance is about ₹48,366.67. Estimated range: ₹45,358.67 to ₹51,374.67."
+          - img "Month-end forecast" [ref=e86]:
+            - generic [ref=e91]: Today
+          - button "Why am I seeing this?" [ref=e93] [cursor=pointer]
+        - generic [ref=e94]:
+          - generic [ref=e95]:
+            - heading "Getting started" [level=2] [ref=e96]
+            - button "Hide" [ref=e97] [cursor=pointer]
+          - generic [ref=e98]:
+            - button "○ Add an account" [ref=e99] [cursor=pointer]:
+              - generic [aria-hidden] [ref=e101]: ›
+            - button "○ Add your first entry" [ref=e102] [cursor=pointer]:
+              - generic [aria-hidden] [ref=e104]: ›
+            - button "✓ Add a person" [ref=e105] [cursor=pointer]
+            - button "○ Set up a backup" [ref=e107] [cursor=pointer]:
+              - generic [aria-hidden] [ref=e109]: ›
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - generic [ref=e112]:
+              - paragraph [ref=e113]: PEOPLE & BALANCES
+              - heading "Outstanding" [level=2] [ref=e114]
+            - button "View all" [ref=e115] [cursor=pointer]
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - generic [ref=e118]: Total to Receive
+              - strong [ref=e119]: ₹1,500
+              - generic [ref=e120]: 1 person
+            - generic [ref=e121]:
+              - generic [ref=e122]: Total to Give
+              - strong [ref=e123]: ₹0
+              - generic [ref=e124]: 0 people
+          - button "Rahul · Demo Will receive ₹1,500" [ref=e126] [cursor=pointer]:
+            - generic [ref=e127]: Rahul · Demo
+            - generic [ref=e128]: Will receive
+            - strong [ref=e129]: ₹1,500
+        - generic [ref=e130]:
+          - generic [ref=e132]:
+            - paragraph [ref=e133]: MONTHLY OVERVIEW
+            - heading "Expense by category" [level=2] [ref=e134]
+          - generic [ref=e136]:
+            - img "Expense by category" [ref=e138]:
+              - generic [ref=e141]: ₹80
+              - generic [ref=e142]: Expense
+            - generic [ref=e144]:
+              - generic [ref=e146]: Food
+              - strong [ref=e147]: ₹80
+        - generic [ref=e148]:
+          - generic [ref=e150]:
+            - paragraph [ref=e151]: SIX MONTH TREND
+            - heading "Income vs Expense" [level=2] [ref=e152]
+          - generic [ref=e153]:
+            - img "Income vs Expense" [ref=e155]:
+              - generic [ref=e156]: Jun
+              - generic [ref=e157]: Jul
+              - generic [ref=e158]: Aug
+              - generic [ref=e159]: Sept
+              - generic [ref=e160]: Oct
+              - generic [ref=e163]: Nov
+            - generic [ref=e164]:
+              - generic [ref=e165]: Income
+              - generic [ref=e168]: Expense
+        - generic [ref=e171]:
+          - generic [ref=e173]:
+            - paragraph [ref=e174]: DAILY TREND
+            - heading "Daily expense trend" [level=2] [ref=e175]
+          - img "Daily expense trend" [ref=e178]:
+            - generic [ref=e181]: "1"
+            - generic [ref=e182]: "15"
+            - generic [ref=e183]: "30"
+        - generic [ref=e184]:
+          - generic [ref=e186]:
+            - paragraph [ref=e187]: ALL TIME
+            - heading "Investments" [level=2] [ref=e188]
+          - button "Total invested ₹0 Remaining cost ₹0 Current value — Realized P/L ₹0 Unrealized P/L — Net result ₹0 View investment list ›" [ref=e189] [cursor=pointer]:
+            - generic [ref=e190]:
+              - generic [ref=e191]: Total invested
+              - strong [ref=e192]: ₹0
+            - generic [ref=e193]:
+              - generic [ref=e194]:
+                - generic [ref=e195]: Remaining cost
+                - strong [ref=e196]: ₹0
+              - generic [ref=e197]:
+                - generic [ref=e198]: Current value
+                - strong [ref=e199]: —
+              - generic [ref=e200]:
+                - generic [ref=e201]: Realized P/L
+                - strong [ref=e202]: ₹0
+              - generic [ref=e203]:
+                - generic [ref=e204]: Unrealized P/L
+                - strong [ref=e205]: —
+              - generic [ref=e206]:
+                - generic [ref=e207]: Net result
+                - strong [ref=e208]: ₹0
+            - generic [ref=e209]: View investment list ›
+        - generic [ref=e210]:
+          - generic [ref=e211]:
+            - generic [ref=e212]:
+              - paragraph [ref=e213]: UPCOMING REMINDERS
+              - heading "Reminders" [level=2] [ref=e214]
+            - button "View all" [ref=e215] [cursor=pointer]
+          - generic [ref=e216]:
+            - generic [ref=e217]:
+              - strong [ref=e218]: "0"
+              - generic [ref=e219]: overdue
+            - paragraph [ref=e221]: No upcoming reminders.
+        - generic [ref=e222]:
+          - generic [ref=e223]:
+            - generic [ref=e224]:
+              - paragraph [ref=e225]: YOUR ACTIVITY
+              - heading "Recent activity" [level=2] [ref=e226]
+            - button "See all" [ref=e227] [cursor=pointer]
+          - generic [ref=e228]:
+            - generic [ref=e229]:
+              - generic [ref=e233]:
+                - strong [ref=e234]: Udhar Received Back DEMO
+                - generic [ref=e235]: 18 Nov · Rahul · Demo
+              - strong [ref=e236]: +₹500
+            - generic [ref=e237]:
+              - generic [ref=e241]:
+                - strong [ref=e242]: Udhar Given DEMO
+                - generic [ref=e243]: 18 Nov · Rahul · Demo
+              - strong [ref=e244]: "-₹2,000"
+            - generic [ref=e245]:
+              - generic [ref=e249]:
+                - strong [ref=e250]: Daily Expense DEMO
+                - generic [ref=e251]: 18 Nov
+              - strong [ref=e252]: "-₹80"
+            - generic [ref=e253]:
+              - generic [ref=e257]:
+                - strong [ref=e258]: Salary DEMO
+                - generic [ref=e259]: 18 Nov
+              - strong [ref=e260]: +₹30,000
+        - generic [ref=e261]:
+          - generic [ref=e263]:
+            - paragraph [ref=e264]: QUICK INSIGHTS
+            - heading "Insights" [level=2] [ref=e265]
+          - generic [ref=e266]:
+            - paragraph [ref=e267]: "Highest expense category: Food ₹80"
+            - paragraph [ref=e268]: You spent ₹4.44 per day on average this month
+            - paragraph [ref=e269]: Savings rate
+  - navigation "Main navigation" [ref=e270]:
+    - button "Dashboard" [ref=e271] [cursor=pointer]
+    - button "Outstanding" [ref=e276] [cursor=pointer]
+    - button "Entry" [ref=e281] [cursor=pointer]
+    - button "Reminders" [ref=e286] [cursor=pointer]
+    - button "More. Backup is due" [ref=e291] [cursor=pointer]:
+      - generic [ref=e295]: More
+  - button "Describe your transaction" [ref=e296] [cursor=pointer]: ＋
+  - status: Sample demo entries added. They are marked DEMO.
+```

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="dashboard" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="2" fill="currentColor" opacity=".25"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="7" height="7" rx="2"/><rect x="13.5" y="13.5" width="7" height="7" rx="2" fill="currentColor" opacity=".25"/></symbol>
+  <symbol id="outstanding" viewBox="0 0 24 24"><path d="M5 8h13m0 0-3-3m3 3-3 3M19 16H6m0 0 3-3m-3 3 3 3"/><circle cx="5" cy="8" r="1.5" fill="currentColor"/><circle cx="19" cy="16" r="1.5" fill="currentColor"/></symbol>
+  <symbol id="entry" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke-width="2.5"/><circle cx="12" cy="12" r="9" fill="currentColor" opacity=".1"/></symbol>
+  <symbol id="reminders" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 8v5l3 2M9 3h6M12 3v2"/><path d="M5.5 6.5 4 8" stroke-width="2"/></symbol>
+  <symbol id="more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.5" fill="currentColor"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/><circle cx="19" cy="12" r="1.5" fill="currentColor"/></symbol>
+  <symbol id="credit" viewBox="0 0 24 24"><path d="M5 17 17 5m0 0H8m9-0v9"/><circle cx="6" cy="6" r="2.5" fill="currentColor" opacity=".2"/></symbol>
+  <symbol id="debit" viewBox="0 0 24 24"><path d="M19 7 7 19m0 0h9m-9 0v-9"/><circle cx="18" cy="18" r="2.5" fill="currentColor" opacity=".2"/></symbol>
+  <symbol id="transfer" viewBox="0 0 24 24"><path d="M4 8h15m0 0-3-3m3 3-3 3M20 16H5m0 0 3-3m-3 3 3 3"/></symbol>
+  <symbol id="wallet" viewBox="0 0 24 24"><path d="M4 7.5h15a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-12a3 3 0 0 1 3-3h12"/><path d="M15 12h6v4h-6a2 2 0 0 1 0-4Z"/><circle cx="16" cy="14" r=".7" fill="currentColor"/></symbol>
+  <symbol id="bank" viewBox="0 0 24 24"><path d="m3 9 9-5 9 5M4 10h16M5 19h14M3 21h18M7 10v9m5-9v9m5-9v9"/><path d="M12 4v4" stroke-width="2"/></symbol>
+  <symbol id="investment" viewBox="0 0 24 24"><path d="M4 19V5m0 14h17M7 15l4-4 3 2 6-7m0 0h-5m5 0v5"/><circle cx="7" cy="15" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="settings" viewBox="0 0 24 24"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"/><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="2.2" fill="currentColor" opacity=".28"/></symbol>
+  <symbol id="reports" viewBox="0 0 24 24"><path d="M5 20V11m7 9V4m7 16v-7"/><path d="M3 20h18" stroke-width="2"/><path d="M5 11h1v9H5zm6-7h2v16h-2zm7 7h2v9h-2z" fill="currentColor" opacity=".22"/></symbol>
+</svg>
